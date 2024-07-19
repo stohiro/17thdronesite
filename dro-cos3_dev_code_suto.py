@@ -94,7 +94,7 @@ def move_vehicle(direction, duration=5):
         time.sleep(duration)
     elif direction == 'yaw_right':
         print("右旋回開始")
-        condition_yaw(180, 1, relative=True)
+        condition_yaw(90, 1, relative=True)
         time.sleep(duration)
     print(f"{direction}方向への移動完了")
 
@@ -106,8 +106,7 @@ def pre_flight_test():
     move_vehicle('forward', 2)
     move_vehicle('left', 3)
     move_vehicle('right', 6)
-    move_vehicle('left', 2)
-    time.sleep(3)
+    move_vehicle('left', 3)
     move_vehicle('up', 5)
     move_vehicle('down', 4)
     move_vehicle('yaw_left', 5)
